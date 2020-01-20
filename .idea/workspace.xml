@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="621cb5e6-c992-4c8f-b127-6fd1a4be3231" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Rohsska/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/AssetImportState" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/AssetImportState" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/EditorUserBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/EditorUserBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.Rider.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.Rider.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.TextMeshPro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.TextMeshPro.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.Timeline.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.Timeline.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.Timeline.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/Unity.VSCode.Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEditor.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEditor.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEditor.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEngine.TestRunner.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEngine.UI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/UnityEngine.UI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/VuforiaEditorScripts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/VuforiaEditorScripts.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/VuforiaScripts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ScriptAssemblies/VuforiaScripts.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/StateCache/Hierarchy/3cc756-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/StateCache/Hierarchy/3cc756-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/1e/1e424f48fda62483aa0c9eec616e0cc8" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/1e/1e424f48fda62483aa0c9eec616e0cc8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/5f/5f131b079790d4251836bc73b812b53d" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/5f/5f131b079790d4251836bc73b812b53d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/5f/5f131b079790d4251836bc73b812b53d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/5f/5f131b079790d4251836bc73b812b53d.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/d4/d46decd9d3bbf0d46b31a3d4ae0f18ff" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/d4/d46decd9d3bbf0d46b31a3d4ae0f18ff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/d4/d46decd9d3bbf0d46b31a3d4ae0f18ff.info" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/d4/d46decd9d3bbf0d46b31a3d4ae0f18ff.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/dd/dd8287d41aafb4b4bacd7e0ebf634a0c" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/dd/dd8287d41aafb4b4bacd7e0ebf634a0c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/e2/e21dffdcc7917472c9827aa5e2387fe8" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/e2/e21dffdcc7917472c9827aa5e2387fe8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/e2/e21dffdcc7917472c9827aa5e2387fe8.info" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/e2/e21dffdcc7917472c9827aa5e2387fe8.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/f6/f6153ed43853e4449924f1322300f084" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/f6/f6153ed43853e4449924f1322300f084" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/f6/f6153ed43853e4449924f1322300f084.info" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/f6/f6153ed43853e4449924f1322300f084.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/fb/fb22b98929f50754ab255ba14de4fa55" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/fb/fb22b98929f50754ab255ba14de4fa55" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/metadata/fb/fb22b98929f50754ab255ba14de4fa55.info" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/metadata/fb/fb22b98929f50754ab255ba14de4fa55.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rohsska/Library/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Rohsska/Library/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="621cb5e6-c992-4c8f-b127-6fd1a4be3231" name="Default Changelist" comment="" />
+      <created>1579532861506</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579532861506</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.16192994" />
+      <window_info id="Structure" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="Resources Explorer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Palette&#9;" />
+    </layout>
+  </component>
+</project>
