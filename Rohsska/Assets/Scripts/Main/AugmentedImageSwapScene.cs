@@ -17,7 +17,6 @@
         public void Update()
         {
             if (Image == null || Image.TrackingState != TrackingState.Tracking) return;
-
             CheckImage();
         }
 

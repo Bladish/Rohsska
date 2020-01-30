@@ -12,7 +12,7 @@
     {
         public AugmentedImageSwapScene AugmentedImageVisualizerPrefab;
         public GameObject FitToScanOverlay;
-        public Anchor anchor;
+        
 
         private Dictionary<int, AugmentedImageSwapScene> m_Visualizers = new Dictionary<int, AugmentedImageSwapScene>();
 
@@ -41,10 +41,7 @@
                 m_Visualizers.TryGetValue(image.DatabaseIndex, out visualizer);
                 if(image.TrackingState == TrackingState.Tracking && visualizer == null)
                 {
-                    //Create an anchor to ensure that ARCore keeps tracking, don't destroy on load on this anchor for the next sceen.
-                    //Setting anchor to the center of the picture just use an offset in next sceene for a good match IRL.
-                    anchor = image.CreateAnchor(image.CenterPose);
-                    visualizer = (AugmentedImageSwapScene)Instantiate(AugmentedImageVisualizerPrefab, anchor.transform);
+                    visualizer = (AugmentedImageSwapScene)Instantiate(AugmentedImageVisualizerPrefab);
                     visualizer.Image = image;
                     m_Visualizers.Add(image.DatabaseIndex, visualizer);
                 }
