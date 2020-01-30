@@ -18,7 +18,13 @@
         {
             if (Image == null || Image.TrackingState != TrackingState.Tracking) return;
 
-            SceneManager.LoadScene("StartMenu");
+            CheckImage();
+        }
+
+        public void CheckImage()
+        {
+            if(Image.Name == "Earth") SceneManager.LoadScene("Earth");
+            if (Image.Name == "Cafe") SceneManager.LoadScene("Cafe");
         }
     }
 }
