@@ -7,9 +7,12 @@ using TMPro;
 //RayCastController for Unity physics.
 public class RayCastController : MonoBehaviour
 {
-    public GameObject testingObjectRed;
-    public GameObject testingObjectBlack;
-    
+    public GameObject testingObject;
+    public GameObject buttonOne;
+    public GameObject buttonTwo;
+    public Material red;
+    public Material black;
+
 
     void Update()
     {
@@ -32,11 +35,10 @@ public class RayCastController : MonoBehaviour
                 int layerMask = 1 << 8;
                 if (Physics.Raycast(ray,out hit, Mathf.Infinity, layerMask))
                 {
-                    //If layermask is intericable you can do stuff to the object here.
-                    
+                    if (hit.transform.name == "Button1") testingObject.GetComponent<MeshRenderer>().material = black;
+                    if (hit.transform.name == "Button2") testingObject.GetComponent<MeshRenderer>().material = red;
                 }
             }
         }
-        
     }
 }
