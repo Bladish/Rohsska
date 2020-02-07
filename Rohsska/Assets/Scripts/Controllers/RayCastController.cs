@@ -7,16 +7,17 @@ using TMPro;
 //RayCastController for Unity physics.
 public class RayCastController : MonoBehaviour
 {
+    public GameObject AnchorObjet;
     public GameObject orignalObject;
     public GameObject sweObject;
+    public GameObject engObject;
     public GameObject buttonOne;
     public GameObject buttonTwo;
-    public Material red;
-    public Material black;
 
     private void Start()
     {
         sweObject.SetActive(false);
+        engObject.SetActive(false);
     }
     void Update()
     {
