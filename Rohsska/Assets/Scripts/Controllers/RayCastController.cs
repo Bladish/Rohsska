@@ -7,13 +7,17 @@ using TMPro;
 //RayCastController for Unity physics.
 public class RayCastController : MonoBehaviour
 {
-    public GameObject testingObject;
+    public GameObject orignalObject;
+    public GameObject sweObject;
     public GameObject buttonOne;
     public GameObject buttonTwo;
     public Material red;
     public Material black;
 
-
+    private void Start()
+    {
+        sweObject.SetActive(false);
+    }
     void Update()
     {
         Touch touch;
@@ -35,8 +39,17 @@ public class RayCastController : MonoBehaviour
                 int layerMask = 1 << 8;
                 if (Physics.Raycast(ray,out hit, Mathf.Infinity, layerMask))
                 {
-                    if (hit.transform.name == "Button1") testingObject.GetComponent<MeshRenderer>().material = black;
-                    if (hit.transform.name == "Button2") testingObject.GetComponent<MeshRenderer>().material = red;
+                    if (hit.transform.name == "Button1")
+                    {
+                        orignalObject.SetActive(true);
+                        sweObject.SetActive(false);
+                    }
+
+                    if (hit.transform.name == "Button2")
+                    {
+                        orignalObject.SetActive(false);
+                        sweObject.SetActive(true);
+                    }
                 }
             }
         }
