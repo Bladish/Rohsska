@@ -1,6 +1,4 @@
-﻿namespace AugmentedImageSwapScene
-{
-    using System;
+﻿    using System;
     using System.Collections.Generic;
     using System.Runtime.InteropServices;
     using GoogleARCore;
@@ -24,6 +22,7 @@
         {
             if(Image.Name == "Earth") SceneManager.LoadScene("Earth");
             if (Image.Name == "Cafe") SceneManager.LoadScene("Cafe");
+            if (Image.Name == "Keyboard") SceneManager.LoadScene("Fish");
         }
     }
-}
+

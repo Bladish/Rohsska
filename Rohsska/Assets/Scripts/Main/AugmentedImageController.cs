@@ -5,7 +5,6 @@
     using GoogleARCore;
     using UnityEngine;
     using UnityEngine.UI;
-    using AugmentedImageSwapScene;
     using UnityEngine.SceneManagement;
 
     public class AugmentedImageController : MonoBehaviour
