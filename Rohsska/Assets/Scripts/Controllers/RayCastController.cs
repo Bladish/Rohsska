@@ -40,13 +40,13 @@ public class RayCastController : MonoBehaviour
                 int layerMask = 1 << 8;
                 if (Physics.Raycast(ray,out hit, Mathf.Infinity, layerMask))
                 {
-                    if (hit.transform.name == "Button1")
+                    if (hit.transform.name == "China Button")
                     {
                         orignalObject.SetActive(true);
                         sweObject.SetActive(false);
                     }
 
-                    if (hit.transform.name == "Button2")
+                    if (hit.transform.name == "Sweden Button")
                     {
                         orignalObject.SetActive(false);
                         sweObject.SetActive(true);

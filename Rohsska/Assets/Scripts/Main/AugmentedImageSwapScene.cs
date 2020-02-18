@@ -20,8 +20,8 @@
 
         public void CheckImage()
         {
-            if(Image.Name == "Earth") SceneManager.LoadScene("Earth");
-            if (Image.Name == "Cafe") SceneManager.LoadScene("Cafe");
+            if (Image.Name == "Earth") SceneManager.LoadScene("Earth");
+            if (Image.Name == "Cafe") SceneManager.LoadScene("Colour");
             if (Image.Name == "Keyboard") SceneManager.LoadScene("Fish");
         }
     }
