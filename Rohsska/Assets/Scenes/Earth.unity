@@ -427,6 +427,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sweden Button
       objectReference: {fileID: 0}
+    - target: {fileID: 8496887320348518442, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+        type: 3}
+      propertyPath: m_Name
+      value: EngTextFont
+      objectReference: {fileID: 0}
     - target: {fileID: 8807116774675980115, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -448,13 +453,13 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &862368197 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2896320794216835958, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+  m_CorrespondingSourceObject: {fileID: 8496887320348518442, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
     type: 3}
   m_PrefabInstance: {fileID: 862368194}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &862368198 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2896320794904617085, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+  m_CorrespondingSourceObject: {fileID: 2999597722614751642, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
     type: 3}
   m_PrefabInstance: {fileID: 862368194}
   m_PrefabAsset: {fileID: 0}
