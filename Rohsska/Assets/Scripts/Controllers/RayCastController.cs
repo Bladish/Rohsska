@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using TMPro;
 
 //RayCastController for Unity physics.
 public class RayCastController : MonoBehaviour
@@ -40,13 +39,13 @@ public class RayCastController : MonoBehaviour
                 int layerMask = 1 << 8;
                 if (Physics.Raycast(ray,out hit, Mathf.Infinity, layerMask))
                 {
-                    if (hit.transform.name == "China Button")
+                    if (hit.transform.name == "Button1")
                     {
                         orignalObject.SetActive(true);
                         sweObject.SetActive(false);
                     }
 
-                    if (hit.transform.name == "Sweden Button")
+                    if (hit.transform.name == "Button2")
                     {
                         orignalObject.SetActive(false);
                         sweObject.SetActive(true);
