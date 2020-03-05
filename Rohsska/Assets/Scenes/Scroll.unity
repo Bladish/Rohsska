@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -472,7 +472,7 @@ PrefabInstance:
     - target: {fileID: 6561781475917835039, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
         type: 3}
@@ -569,18 +569,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 527494479}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &527494483 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2896320794216835958, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-    type: 3}
-  m_PrefabInstance: {fileID: 527494479}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &527494484 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2896320794904617085, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-    type: 3}
-  m_PrefabInstance: {fileID: 527494479}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &527494485 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
@@ -614,8 +602,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0.8620571, b: 0.48584908, a: 1}
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -671,8 +659,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593015136}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.16133358, y: -0.00233528, z: 0.00038660684, w: -0.9868971}
+  m_LocalPosition: {x: -0.3235956, y: 1.477437, z: -1.1609312}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -841,8 +829,8 @@ MonoBehaviour:
   AnchorObjet: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
     type: 3}
   orignalObject: {fileID: 527494480}
-  sweObject: {fileID: 527494484}
-  engObject: {fileID: 527494483}
+  sweObject: {fileID: 0}
+  engObject: {fileID: 0}
   buttonOne: {fileID: 527494482}
   buttonTwo: {fileID: 527494481}
 --- !u!114 &1092820020
