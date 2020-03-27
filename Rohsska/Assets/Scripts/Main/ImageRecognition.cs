@@ -38,6 +38,15 @@ public class ImageRecognition : MonoBehaviour
                     SceneManager.LoadScene("Scroll");
                     FitToScanOverlay.SetActive(false);
                     break;
+        
+                case "001":
+                    SceneManager.LoadScene("Colour");
+                    FitToScanOverlay.SetActive(false);
+                    break;
+                case "002":
+                    SceneManager.LoadScene("Fish");
+                    FitToScanOverlay.SetActive(false);
+                    break;
                 default:
                     break;
             }

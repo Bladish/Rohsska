@@ -12,7 +12,7 @@ public class ColourController : MonoBehaviour
     public GameObject startObject;
     public GameObject[] colours;
     public GameObject[] buttons;
-    public TMP_Text debugText;
+    public new Camera camera;
 
 
     private void Awake()
@@ -39,18 +39,16 @@ public class ColourController : MonoBehaviour
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+                Ray ray = camera.ScreenPointToRay(Input.GetTouch(i).position);
                 RaycastHit hit;
                 int layerMask = 1 << 8;
                 if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
                 {
-                    debugText.text = hit.transform.name;
                     string objectName = hit.transform.name;
                     switch (objectName)
                     {
                         case "Black":
                             startObject.SetActive(false);
-                            colours[6].SetActive(false);
                             colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
@@ -58,10 +56,9 @@ public class ColourController : MonoBehaviour
                             colours[1].SetActive(false);
                             colours[0].SetActive(true);
                             break;
-                        
-                        case "Gold":
+
+                        case "Yellow":
                             startObject.SetActive(false);
-                            colours[6].SetActive(false);
                             colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
@@ -72,7 +69,6 @@ public class ColourController : MonoBehaviour
 
                         case "Red":
                             startObject.SetActive(false);
-                            colours[6].SetActive(false);
                             colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
@@ -83,7 +79,6 @@ public class ColourController : MonoBehaviour
 
                         case "White":
                             startObject.SetActive(false);
-                            colours[6].SetActive(false);
                             colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[2].SetActive(false);
@@ -94,7 +89,6 @@ public class ColourController : MonoBehaviour
 
                         case "Purple":
                             startObject.SetActive(false);
-                            colours[6].SetActive(false);
                             colours[5].SetActive(false);
                             colours[3].SetActive(false);
                             colours[2].SetActive(false);
@@ -105,7 +99,6 @@ public class ColourController : MonoBehaviour
 
                         case "Green":
                             startObject.SetActive(false);
-                            colours[6].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
                             colours[2].SetActive(false);
@@ -114,19 +107,7 @@ public class ColourController : MonoBehaviour
                             colours[5].SetActive(true);
                             break;
 
-                        case "Yellow":
-                            startObject.SetActive(false);
-                            colours[5].SetActive(false);
-                            colours[4].SetActive(false);
-                            colours[3].SetActive(false);
-                            colours[2].SetActive(false);
-                            colours[1].SetActive(false);
-                            colours[0].SetActive(false);
-                            colours[6].SetActive(true);
-                            break;
-                        
                         default:
-                            colours[6].SetActive(false);
                             colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
