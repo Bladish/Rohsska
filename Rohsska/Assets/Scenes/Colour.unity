@@ -166,6 +166,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &153685650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171055305513531116, guid: 217afa2bafda9454a832c84203b6862c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8171055305361029246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &379371309 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171055305065613139, guid: 217afa2bafda9454a832c84203b6862c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8171055305361029246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &415587418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171055305239045156, guid: 217afa2bafda9454a832c84203b6862c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8171055305361029246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &418489726
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +287,12 @@ RectTransform:
 --- !u!1 &498755763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8171055305185497293, guid: 217afa2bafda9454a832c84203b6862c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8171055305361029246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &631916361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171055305857646391, guid: 217afa2bafda9454a832c84203b6862c,
     type: 3}
   m_PrefabInstance: {fileID: 8171055305361029246}
   m_PrefabAsset: {fileID: 0}
@@ -427,6 +451,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216819656}
   m_CullTransparentMesh: 0
+--- !u!1 &1402819863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171055306223136105, guid: 217afa2bafda9454a832c84203b6862c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8171055305361029246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1515573463
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +741,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttemptUpdate: 1
   m_MatchFrameRate: 1
+--- !u!1 &1610518349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171055305546597822, guid: 217afa2bafda9454a832c84203b6862c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8171055305361029246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1764460798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8171055307124306048, guid: 217afa2bafda9454a832c84203b6862c,
@@ -732,8 +768,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1854037523}
-  - component: {fileID: 1854037522}
   - component: {fileID: 1854037521}
+  - component: {fileID: 1854037522}
   m_Layer: 0
   m_Name: ColourController
   m_TagString: Untagged
@@ -768,12 +804,12 @@ MonoBehaviour:
   AnchorObject: {fileID: 1871543594}
   startObject: {fileID: 1764460798}
   colours:
-  - {fileID: 1793169405}
-  - {fileID: 1117666852}
-  - {fileID: 744422229}
-  - {fileID: 2092165016}
-  - {fileID: 1540110881}
-  - {fileID: 498755763}
+  - {fileID: 153685650}
+  - {fileID: 1610518349}
+  - {fileID: 379371309}
+  - {fileID: 1402819863}
+  - {fileID: 631916361}
+  - {fileID: 415587418}
   buttons:
   - {fileID: 1793169405}
   - {fileID: 1117666852}
