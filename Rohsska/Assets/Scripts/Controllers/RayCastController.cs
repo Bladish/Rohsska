@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 //RayCastController for Unity physics.
 public class RayCastController : MonoBehaviour
 {
-    public GameObject AnchorObjet;
     public GameObject orignalObject;
     public GameObject sweObject;
     public GameObject engObject;
     public GameObject buttonOne;
     public GameObject buttonTwo;
+    public new Camera camera;
+
 
     private void Start()
     {
@@ -34,10 +36,9 @@ public class RayCastController : MonoBehaviour
         {
             if (Input.GetTouch(i).phase == TouchPhase.Began)
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-                RaycastHit hit;
+                Ray ray = camera.ScreenPointToRay(Input.GetTouch(i).position);
                 int layerMask = 1 << 8;
-                if (Physics.Raycast(ray,out hit, Mathf.Infinity, layerMask))
+                if (Physics.Raycast(ray,out RaycastHit hit, Mathf.Infinity, layerMask))
                 {
                     if (hit.transform.name == "Button1")
                     {
