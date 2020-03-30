@@ -12,6 +12,7 @@ public class RayCastController : MonoBehaviour
     public GameObject engObject;
     public GameObject buttonOne;
     public GameObject buttonTwo;
+    public GameObject buttonThree;
     public new Camera camera;
 
 
@@ -38,18 +39,34 @@ public class RayCastController : MonoBehaviour
             {
                 Ray ray = camera.ScreenPointToRay(Input.GetTouch(i).position);
                 int layerMask = 1 << 8;
-                if (Physics.Raycast(ray,out RaycastHit hit, Mathf.Infinity, layerMask))
+                if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, layerMask))
                 {
-                    if (hit.transform.name == "Button1")
+                    string hitName = hit.transform.name;
+                    switch (hitName)
                     {
-                        orignalObject.SetActive(true);
-                        sweObject.SetActive(false);
-                    }
+                        case "Button1":
+                            orignalObject.SetActive(true);
+                            engObject.SetActive(false);
+                            sweObject.SetActive(false);
+                            break;
 
-                    if (hit.transform.name == "Button2")
-                    {
-                        orignalObject.SetActive(false);
-                        sweObject.SetActive(true);
+                        case "Button2":
+                            orignalObject.SetActive(false);
+                            engObject.SetActive(false);
+                            sweObject.SetActive(true);
+                            break;
+
+                        case "Button3":
+                            orignalObject.SetActive(false);
+                            engObject.SetActive(true);
+                            sweObject.SetActive(false);
+                            break;
+
+                        default:
+                            orignalObject.SetActive(false);
+                            engObject.SetActive(false);
+                            sweObject.SetActive(true);
+                            break;
                     }
                 }
             }
