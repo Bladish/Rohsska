@@ -304,21 +304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 595323900223410345, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 2975447739716825495, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_Name
-      value: China Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 6561781475917835039, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
         type: 3}
       propertyPath: m_Name
@@ -379,21 +364,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7973588138923005331, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_Name
-      value: Sweden Button
-      objectReference: {fileID: 0}
-    - target: {fileID: 8496887320348518442, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_Name
-      value: EngTextFont
-      objectReference: {fileID: 0}
-    - target: {fileID: 8807116774675980115, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.001
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1341a337c8dfbe4e983cd1f9756eb0a, type: 3}
 --- !u!1 &527494480 stripped
@@ -414,30 +384,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 527494479}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &527494485 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-    type: 3}
-  m_PrefabInstance: {fileID: 527494479}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &527494496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 527494485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 0
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 1
 --- !u!1 &593015136
 GameObject:
   m_ObjectHideFlags: 0
