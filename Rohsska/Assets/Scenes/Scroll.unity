@@ -706,6 +706,7 @@ GameObject:
   - component: {fileID: 1092820021}
   - component: {fileID: 1092820018}
   - component: {fileID: 1092820020}
+  - component: {fileID: 1092820019}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -732,6 +733,18 @@ MonoBehaviour:
   buttonTwo: {fileID: 527494482}
   buttonThree: {fileID: 527494481}
   camera: {fileID: 946749893}
+--- !u!114 &1092820019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092820017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f661aacd3046a4fbac3f2e3d173911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1092820020
 MonoBehaviour:
   m_ObjectHideFlags: 0
