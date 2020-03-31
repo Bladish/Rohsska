@@ -304,6 +304,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000019861236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.00000019861236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
         type: 3}
       propertyPath: m_Name
@@ -374,13 +399,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &527494481 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6561781476871473479, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+  m_CorrespondingSourceObject: {fileID: 932141407, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
     type: 3}
   m_PrefabInstance: {fileID: 527494479}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &527494482 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6561781475917835039, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+  m_CorrespondingSourceObject: {fileID: 5178536744514829866, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 527494479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &527494483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5399353128490184368, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
     type: 3}
   m_PrefabInstance: {fileID: 527494479}
   m_PrefabAsset: {fileID: 0}
@@ -697,8 +728,9 @@ MonoBehaviour:
   orignalObject: {fileID: 527494480}
   sweObject: {fileID: 1225809314}
   engObject: {fileID: 886593844}
-  buttonOne: {fileID: 527494482}
-  buttonTwo: {fileID: 527494481}
+  buttonOne: {fileID: 527494483}
+  buttonTwo: {fileID: 527494482}
+  buttonThree: {fileID: 527494481}
   camera: {fileID: 946749893}
 --- !u!114 &1092820020
 MonoBehaviour:
