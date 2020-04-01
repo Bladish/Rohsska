@@ -304,31 +304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000019861236
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.00000019861236
-      objectReference: {fileID: 0}
-    - target: {fileID: 1854383869755403021, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6561781477287401394, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
         type: 3}
       propertyPath: m_Name
@@ -705,8 +680,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1092820021}
   - component: {fileID: 1092820018}
-  - component: {fileID: 1092820020}
   - component: {fileID: 1092820019}
+  - component: {fileID: 1092820020}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -733,6 +708,7 @@ MonoBehaviour:
   buttonTwo: {fileID: 527494482}
   buttonThree: {fileID: 527494481}
   camera: {fileID: 946749893}
+  animationController: {fileID: 1092820019}
 --- !u!114 &1092820019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,6 +721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f661aacd3046a4fbac3f2e3d173911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2058089290}
 --- !u!114 &1092820020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,3 +987,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AttemptUpdate: 1
   m_MatchFrameRate: 1
+--- !u!95 &2058089290 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 6349489178579020493, guid: e1341a337c8dfbe4e983cd1f9756eb0a,
+    type: 3}
+  m_PrefabInstance: {fileID: 527494479}
+  m_PrefabAsset: {fileID: 0}

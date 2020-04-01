@@ -15,6 +15,8 @@ public class RayCastController : MonoBehaviour
     public GameObject buttonThree;
     public new Camera camera;
 
+    public AnimationController animationController;  // patrik added for anim test
+
 
     private void Start()
     {
@@ -45,6 +47,7 @@ public class RayCastController : MonoBehaviour
                     switch (hitName)
                     {
                         case "Button1":
+                            animationController.PlayAnimation(); // patrik added for anim test
                             orignalObject.SetActive(true);
                             engObject.SetActive(false);
                             sweObject.SetActive(false);
