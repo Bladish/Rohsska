@@ -48,30 +48,33 @@ public class RayCastController : MonoBehaviour
                         case "Button1":
                             if (!animationController.animation.isPlaying)
                             {
-                                engObject.SetActive(false);
-                                sweObject.SetActive(false);
+                                //engObject.SetActive(false);
+                                //sweObject.SetActive(false);
                                 animationController.PlayAnimation();
-                                orignalObject.SetActive(true);
+                                //orignalObject.SetActive(true);
+                                StartCoroutine(TextDelay(engObject, sweObject, orignalObject));
                             }
                             break;
 
                         case "Button2":
                             if (!animationController.animation.isPlaying)
                             {
-                                orignalObject.SetActive(false);
-                                engObject.SetActive(false);
+                                //orignalObject.SetActive(false);
+                                //engObject.SetActive(false);
                                 animationController.PlayAnimation();
-                                sweObject.SetActive(true);
+                                //sweObject.SetActive(true);
+                                StartCoroutine(TextDelay(engObject, orignalObject, sweObject));
                             }
                             break;
 
                         case "Button3":
                             if (!animationController.animation.isPlaying)
                             {
-                                sweObject.SetActive(false);
-                                orignalObject.SetActive(false);
+                                //sweObject.SetActive(false);
+                                //orignalObject.SetActive(false);
                                 animationController.PlayAnimation();
-                                engObject.SetActive(true);
+                                //engObject.SetActive(true);
+                                StartCoroutine(TextDelay(sweObject, orignalObject, engObject));
                             }
                             break;
 
@@ -88,5 +91,12 @@ public class RayCastController : MonoBehaviour
                 }
             }
         }
+    }
+    IEnumerator TextDelay(GameObject firstGameObject, GameObject secondGameObject, GameObject enableGameObject)
+    {
+        yield return new WaitForSeconds(1f);
+        firstGameObject.SetActive(false);
+        secondGameObject.SetActive(false);
+        enableGameObject.SetActive(true);
     }
 }
