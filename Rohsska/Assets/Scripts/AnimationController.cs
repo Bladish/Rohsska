@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AnimationController : MonoBehaviour
 {
-    public  Animator animator;
+    public  Animation animation;
+    public Text text;
 
-    IEnumerator PlayAnimation ()
+    public void PlayAnimation ()
     {
-        animator.SetTrigger("UpDown");
-        yield return new WaitForSeconds(2f);
+        text.text = "Triggered";
+        animation.Play("ScrollUpDown");
     }
-
 }
