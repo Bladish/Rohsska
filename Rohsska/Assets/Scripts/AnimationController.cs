@@ -9,7 +9,7 @@ public class AnimationController : MonoBehaviour
     IEnumerator PlayAnimation ()
     {
         animator.SetTrigger("UpDown");
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(2f);
     }
 
 }
