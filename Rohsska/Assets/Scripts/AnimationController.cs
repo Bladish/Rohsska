@@ -6,13 +6,10 @@ public class AnimationController : MonoBehaviour
 {
     public  Animator animator;
 
-
-   
-   
-
-    public void PlayAnimation ()
+    IEnumerator PlayAnimation ()
     {
-        animator.SetTrigger("UpDown");        
+        animator.SetTrigger("UpDown");
+        yield return new WaitForSeconds(0.2f);
     }
 
 }

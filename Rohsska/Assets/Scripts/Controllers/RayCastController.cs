@@ -15,8 +15,7 @@ public class RayCastController : MonoBehaviour
     public GameObject buttonThree;
     public new Camera camera;
 
-    public AnimationController animationController;  // patrik added for anim test
-
+    public AnimationController animationController; 
 
     private void Start()
     {
@@ -47,28 +46,31 @@ public class RayCastController : MonoBehaviour
                     switch (hitName)
                     {
                         case "Button1":
-                            animationController.PlayAnimation(); // patrik added for anim test
-                            orignalObject.SetActive(true);
                             engObject.SetActive(false);
                             sweObject.SetActive(false);
+                            StartCoroutine("PlayAnimation");
+                            orignalObject.SetActive(true);
                             break;
 
                         case "Button2":
                             orignalObject.SetActive(false);
                             engObject.SetActive(false);
+                            StartCoroutine("PlayAnimation");
                             sweObject.SetActive(true);
                             break;
 
                         case "Button3":
-                            orignalObject.SetActive(false);
-                            engObject.SetActive(true);
                             sweObject.SetActive(false);
+                            orignalObject.SetActive(false);
+                            StartCoroutine("PlayAnimation");
+                            engObject.SetActive(true);
                             break;
 
                         default:
-                            orignalObject.SetActive(false);
                             engObject.SetActive(false);
-                            sweObject.SetActive(true);
+                            sweObject.SetActive(false);
+                            StartCoroutine("PlayAnimation");
+                            orignalObject.SetActive(true);
                             break;
                     }
                 }
