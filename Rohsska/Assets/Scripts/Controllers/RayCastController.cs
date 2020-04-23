@@ -48,10 +48,7 @@ public class RayCastController : MonoBehaviour
                         case "Button1":
                             if (!animationController.animation.isPlaying)
                             {
-                                //engObject.SetActive(false);
-                                //sweObject.SetActive(false);
                                 animationController.PlayAnimation();
-                                //orignalObject.SetActive(true);
                                 StartCoroutine(TextDelay(engObject, sweObject, orignalObject));
                             }
                             break;
@@ -59,10 +56,7 @@ public class RayCastController : MonoBehaviour
                         case "Button2":
                             if (!animationController.animation.isPlaying)
                             {
-                                //orignalObject.SetActive(false);
-                                //engObject.SetActive(false);
                                 animationController.PlayAnimation();
-                                //sweObject.SetActive(true);
                                 StartCoroutine(TextDelay(engObject, orignalObject, sweObject));
                             }
                             break;
@@ -70,10 +64,7 @@ public class RayCastController : MonoBehaviour
                         case "Button3":
                             if (!animationController.animation.isPlaying)
                             {
-                                //sweObject.SetActive(false);
-                                //orignalObject.SetActive(false);
                                 animationController.PlayAnimation();
-                                //engObject.SetActive(true);
                                 StartCoroutine(TextDelay(sweObject, orignalObject, engObject));
                             }
                             break;
