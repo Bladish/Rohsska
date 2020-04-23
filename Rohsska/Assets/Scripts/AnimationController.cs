@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AnimationController : MonoBehaviour
 {
-    public  Animation animation;
+    public new Animation animation;
     public Text text;
 
     public void PlayAnimation ()

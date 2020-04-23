@@ -46,31 +46,43 @@ public class RayCastController : MonoBehaviour
                     switch (hitName)
                     {
                         case "Button1":
-                            engObject.SetActive(false);
-                            sweObject.SetActive(false);
-                            StartCoroutine("PlayAnimation");
-                            orignalObject.SetActive(true);
+                            if (!animationController.animation.isPlaying)
+                            {
+                                engObject.SetActive(false);
+                                sweObject.SetActive(false);
+                                animationController.PlayAnimation();
+                                orignalObject.SetActive(true);
+                            }
                             break;
 
                         case "Button2":
-                            orignalObject.SetActive(false);
-                            engObject.SetActive(false);
-                            StartCoroutine("PlayAnimation");
-                            sweObject.SetActive(true);
+                            if (!animationController.animation.isPlaying)
+                            {
+                                orignalObject.SetActive(false);
+                                engObject.SetActive(false);
+                                animationController.PlayAnimation();
+                                sweObject.SetActive(true);
+                            }
                             break;
 
                         case "Button3":
-                            sweObject.SetActive(false);
-                            orignalObject.SetActive(false);
-                            StartCoroutine("PlayAnimation");
-                            engObject.SetActive(true);
+                            if (!animationController.animation.isPlaying)
+                            {
+                                sweObject.SetActive(false);
+                                orignalObject.SetActive(false);
+                                animationController.PlayAnimation();
+                                engObject.SetActive(true);
+                            }
                             break;
 
                         default:
-                            engObject.SetActive(false);
-                            sweObject.SetActive(false);
-                            StartCoroutine("PlayAnimation");
-                            orignalObject.SetActive(true);
+                            if (!animationController.animation.isPlaying)
+                            {
+                                engObject.SetActive(false);
+                                sweObject.SetActive(false);
+                                animationController.PlayAnimation();
+                                orignalObject.SetActive(true);
+                            }
                             break;
                     }
                 }
