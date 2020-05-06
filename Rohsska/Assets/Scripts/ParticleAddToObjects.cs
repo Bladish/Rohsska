@@ -10,13 +10,8 @@ public class ParticleAddToObjects : MonoBehaviour
     private ARRaycastManager m_ARRaycastManager;
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
     public GameObject m_PlacedPrefab;
-    public GameObject spawnedObject { get; private set; }
+    private GameObject spawnedObject;
 
-    public GameObject placedPrefab
-    {
-        get { return m_PlacedPrefab; }
-        set { m_PlacedPrefab = value; }
-    }
 
     private void Start()
     {
