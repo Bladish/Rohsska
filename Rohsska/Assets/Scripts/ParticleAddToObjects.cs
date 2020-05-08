@@ -13,6 +13,7 @@ public class ParticleAddToObjects : MonoBehaviour
     private GameObject spawnedObject;
 
 
+
     private void Start()
     {
         m_ARRaycastManager = GetComponent<ARRaycastManager>();
@@ -66,3 +67,4 @@ public class ParticleAddToObjects : MonoBehaviour
         }
     }
 }
+
