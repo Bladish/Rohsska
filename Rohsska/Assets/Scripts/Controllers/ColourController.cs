@@ -49,7 +49,6 @@ public class ColourController : MonoBehaviour
                     {
                         case "Black":
                             startObject.SetActive(false);
-                            colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
                             colours[2].SetActive(false);
@@ -59,7 +58,6 @@ public class ColourController : MonoBehaviour
 
                         case "Yellow":
                             startObject.SetActive(false);
-                            colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
                             colours[2].SetActive(false);
@@ -69,7 +67,6 @@ public class ColourController : MonoBehaviour
 
                         case "Red":
                             startObject.SetActive(false);
-                            colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
                             colours[1].SetActive(false);
@@ -79,7 +76,6 @@ public class ColourController : MonoBehaviour
 
                         case "White":
                             startObject.SetActive(false);
-                            colours[5].SetActive(false);
                             colours[4].SetActive(false);
                             colours[2].SetActive(false);
                             colours[1].SetActive(false);
@@ -87,9 +83,8 @@ public class ColourController : MonoBehaviour
                             colours[3].SetActive(true);
                             break;
 
-                        case "Purple":
+                        case "Green":
                             startObject.SetActive(false);
-                            colours[5].SetActive(false);
                             colours[3].SetActive(false);
                             colours[2].SetActive(false);
                             colours[1].SetActive(false);
@@ -97,18 +92,10 @@ public class ColourController : MonoBehaviour
                             colours[4].SetActive(true);
                             break;
 
-                        case "Green":
-                            startObject.SetActive(false);
-                            colours[4].SetActive(false);
-                            colours[3].SetActive(false);
-                            colours[2].SetActive(false);
-                            colours[1].SetActive(false);
-                            colours[0].SetActive(false);
-                            colours[5].SetActive(true);
-                            break;
+
 
                         default:
-                            colours[5].SetActive(false);
+ 
                             colours[4].SetActive(false);
                             colours[3].SetActive(false);
                             colours[2].SetActive(false);
