@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using TMPro;
 
 //RayCastController for Unity physics.
 public class RayCastController : MonoBehaviour
