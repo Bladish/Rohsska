@@ -3,63 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
+using TMPro;
 
 public class Picture : MonoBehaviour
 {
-    protected string PictureDirectory;
-    protected string PlayerPrefsKey = "NiceKey";
-    protected int numberOfPictures;
-    protected string pictureName = "Picture";
-    protected string pictureFileType = ".png";
-    protected List<RawImage> ScreenShots = new List<RawImage>();
+    public string PictureDirectory { get; private set; }
+    public string fileType { get; private set; } = ".png";
+    private string[] files = null;
     [SerializeField]
-    private RawImage showImage;
-    private RawImage image;
-    
+    private Image showImage;
+    public TMP_Text debugText;
+
     private void Awake()
     {
         PictureDirectory = Application.persistentDataPath;
     }
     
-    private void Start()
+    public void GetPicture()
     {
-        numberOfPictures = PlayerPrefs.GetInt(PlayerPrefsKey);
-        StartLoadPicture();
+        files = null;
+        files = Directory.GetFiles(PictureDirectory + "/", "*" + fileType);
+        string pathToFile = files[WhichScreenShotIsShown()];
+        Texture2D texture = GetScreenShootImage(pathToFile);
+        Sprite sp = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(texture.width * 0.5f, texture.height * 0.5f));
+        showImage.sprite = sp;
     }
 
-    private void StartLoadPicture()
+    Texture2D GetScreenShootImage(string filePath)
     {
-        if (numberOfPictures == 0)
+        Texture2D texture = null;
+        byte[] fileBytes;
+        if (File.Exists(filePath))
         {
-            return;
+            fileBytes = File.ReadAllBytes(filePath);
+            texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
+            texture.LoadImage(fileBytes);
         }
-        else
-        {
-            for (int i = 0; i <= numberOfPictures; i++)
-            {
-                ScreenShots.Add(GetPicture(i));
-            }
-        }
+        return texture;
     }
 
-    public void PopPicture()
+    public int WhichScreenShotIsShown()
     {
-        showImage = GetPicture(numberOfPictures);
-    }
-
-    private RawImage GetPicture(int i)
-    {
-        string url = (PictureDirectory + "/" +pictureName + i.ToString() + pictureFileType);
-        var bytes = File.ReadAllBytes(url);
-        Texture2D texture = new Texture2D(Screen.width, Screen.height);
-        texture.LoadImage(bytes);
-        image.texture = texture;
-        return image;
-    }
-
-    public void AddImageToList()
-    {
-        ScreenShots.Add(GetPicture(numberOfPictures));
+        int lastestFile = files.Length - 1;
+        return lastestFile;
     }
 }
 
