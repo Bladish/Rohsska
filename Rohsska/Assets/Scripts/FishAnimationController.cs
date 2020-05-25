@@ -13,14 +13,14 @@ public class FishAnimationController : MonoBehaviour
     {
         fishAnimator = GetComponent<Animator>();
     }
-    void Update()
-    {
-        if (canRunAnimation)
-        {
-            fishAnimator.Play("NewFishJump");
-            canRunAnimation = false;
-        }
-    }
+    //void Update()
+    //{
+    //    if (canRunAnimation)
+    //    {
+    //        fishAnimator.Play("NewFishJump");
+    //        canRunAnimation = false;
+    //    }
+    //}
     public void SplashParticles()
     {
         waterSplash.Play();
