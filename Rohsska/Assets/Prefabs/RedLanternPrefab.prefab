@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2690643206203637100}
   - component: {fileID: 8561546475532478577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RedLanternPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
