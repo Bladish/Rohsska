@@ -10,4 +10,9 @@ public class StartButton : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void LoadInteractionsScene()
+    {
+        SceneManager.LoadScene("Interactions");
+    }
 }

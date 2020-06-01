@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEngine.UI;
-using TMPro;
+
 
 public class Picture : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public class Picture : MonoBehaviour
     private string[] files = null;
     [SerializeField]
     private Image showImage;
-    public TMP_Text debugText;
+
 
     private void Awake()
     {
