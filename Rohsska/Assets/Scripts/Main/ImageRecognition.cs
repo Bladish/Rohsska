@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-using TMPro;
 
 public class ImageRecognition : MonoBehaviour
 {
     private ARTrackedImageManager _arTrackedImageManager;
     public GameObject FitToScanOverlay;
-    
+    public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
     void Awake()
     {
         _arTrackedImageManager = GetComponent<ARTrackedImageManager>();
@@ -47,6 +46,7 @@ public class ImageRecognition : MonoBehaviour
                     SceneManager.LoadScene("Fish");
                     FitToScanOverlay.SetActive(false);
                     break;case "003":
+                    
                     SceneManager.LoadScene("Tattoo");
                     FitToScanOverlay.SetActive(false);
                     break;
