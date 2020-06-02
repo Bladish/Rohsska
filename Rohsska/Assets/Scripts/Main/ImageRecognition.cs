@@ -7,24 +7,24 @@ using UnityEngine.XR.ARSubsystems;
 
 public class ImageRecognition : MonoBehaviour
 {
-    private ARTrackedImageManager _arTrackedImageManager;
+    private ARTrackedImageManager arTrackedImageManager;
     public GameObject FitToScanOverlay;
     public static List<ARRaycastHit> hits = new List<ARRaycastHit>();
     void Awake()
     {
-        _arTrackedImageManager = GetComponent<ARTrackedImageManager>();
+        arTrackedImageManager = GetComponent<ARTrackedImageManager>();
         Application.targetFrameRate = 60;
         FitToScanOverlay.SetActive(true);
     }
 
     public void OnEnable()
     {
-        _arTrackedImageManager.trackedImagesChanged += OnImageChanged;
+        arTrackedImageManager.trackedImagesChanged += OnImageChanged;
     }
 
     public void OnDisable()
     {
-        _arTrackedImageManager.trackedImagesChanged -= OnImageChanged;
+        arTrackedImageManager.trackedImagesChanged -= OnImageChanged;
     }
 
     public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
@@ -45,8 +45,8 @@ public class ImageRecognition : MonoBehaviour
                 case "002":
                     SceneManager.LoadScene("Fish");
                     FitToScanOverlay.SetActive(false);
-                    break;case "003":
-                    
+                    break;
+                case "003":
                     SceneManager.LoadScene("Tattoo");
                     FitToScanOverlay.SetActive(false);
                     break;

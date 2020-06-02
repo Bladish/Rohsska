@@ -3,25 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 [RequireComponent(typeof(ARTrackedImageManager))]
-// Prefab name needs to bee the same as the trackedImage name
+
 public class TrackedImage : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] placeablePrefabs;
-
-    private Dictionary<string, GameObject> spawnedPrefabs = new Dictionary<string, GameObject>();
+    private GameObject placeablePrefab;
+    private GameObject spawnedGameObject;
     private ARTrackedImageManager trackedImageManager;
-
+    [SerializeField]
+    private float offsetX;
+    [SerializeField]
+    private float offsetY;
+    [SerializeField]
+    private float offsetZ;
     private void Awake()
     {
         trackedImageManager = GetComponent<ARTrackedImageManager>();
-
-        foreach (var prefab in placeablePrefabs)
-        {
-            GameObject newPrefab = Instantiate(prefab, Vector3.zero, Quaternion.identity);
-            newPrefab.name = prefab.name;
-            spawnedPrefabs.Add(prefab.name, newPrefab);
-        }
     }
 
     private void OnEnable()
@@ -45,40 +42,22 @@ public class TrackedImage : MonoBehaviour
         {
             UpdateImage(trackedImage);
         }
-        
-        foreach (ARTrackedImage trackedImage in eventArgs.removed)
-        {
-            StartCoroutine(DeactivatePrefab(trackedImage.name));
-        }
+
     }
 
     private void UpdateImage(ARTrackedImage trackedImage)
     {
-        string name = trackedImage.referenceImage.name;
-        Vector3 position = trackedImage.transform.position;
-
-        GameObject prefab = spawnedPrefabs[name];
-        prefab.transform.position = position;
-        if(prefab.name == "003")
+        if(trackedImage.referenceImage.name == "003")
         {
-            prefab.GetComponentInChildren<Animator>().SetBool("FishJump", true);
-        }
-        prefab.SetActive(true);
-
-        foreach (GameObject item in spawnedPrefabs.Values)
-        {
-            if(item.name != name)
+            if (spawnedGameObject != null)
             {
-                item.SetActive(false);
-                prefab.GetComponentInChildren<Animator>().SetBool("FishJump", false);
+                Vector3 position = new Vector3(trackedImage.transform.position.x + offsetX, trackedImage.transform.position.y + offsetY, trackedImage.transform.position.z + offsetZ);
+                spawnedGameObject.transform.position = position;
+            }
+            else
+            {
+                spawnedGameObject = Instantiate(placeablePrefab, trackedImage.transform);
             }
         }
-    }
-
-    IEnumerator DeactivatePrefab(string key)
-    {
-        yield return new WaitForSeconds(3f);
-        if(key == "003") spawnedPrefabs[key].GetComponentInChildren<Animator>().SetBool("FishJump", false);
-        spawnedPrefabs[key].SetActive(false);
     }
 }
