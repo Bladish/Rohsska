@@ -47,7 +47,7 @@ public class ImageRecognition : MonoBehaviour
                     SceneManager.LoadScene("Fish");
                     FitToScanOverlay.SetActive(false);
                     break;case "003":
-                    SceneManager.LoadScene("Interactions");
+                    SceneManager.LoadScene("Tattoo");
                     FitToScanOverlay.SetActive(false);
                     break;
                 default:
