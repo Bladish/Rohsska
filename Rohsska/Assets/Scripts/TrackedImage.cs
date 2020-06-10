@@ -47,7 +47,7 @@ public class TrackedImage : MonoBehaviour
 
     private void UpdateImage(ARTrackedImage trackedImage)
     {
-        if(trackedImage.referenceImage.name == "003")
+        if(trackedImage.referenceImage.name == "003" || trackedImage.referenceImage.name == "004")
         {
             if (spawnedGameObject != null)
             {

@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.498398, g: 0.5335232, b: 0.6037736, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1019,7 +1019,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placeablePrefab: {fileID: 5986873967534556321, guid: 7fe4bb5146b00594ba343c186b106dc6,
     type: 3}
-  debugText: {fileID: 1619942156}
+  offsetX: 0
+  offsetY: 0
+  offsetZ: 0
 --- !u!114 &1979995861
 MonoBehaviour:
   m_ObjectHideFlags: 0

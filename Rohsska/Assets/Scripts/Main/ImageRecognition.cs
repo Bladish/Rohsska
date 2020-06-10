@@ -50,6 +50,10 @@ public class ImageRecognition : MonoBehaviour
                     SceneManager.LoadScene("Tattoo");
                     FitToScanOverlay.SetActive(false);
                     break;
+                case "004":
+                    SceneManager.LoadScene("Tattoo");
+                    FitToScanOverlay.SetActive(false);
+                    break;
                 default:
                     break;
             }
