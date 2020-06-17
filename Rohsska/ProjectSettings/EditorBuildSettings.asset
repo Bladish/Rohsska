@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fish.unity
     guid: b4a4df394a11a624ab6fc7bb79696178
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Interactions.unity
     guid: 2c9076b37b2d76c4193321c5357bcb37
   - enabled: 1
